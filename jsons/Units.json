@@ -1,0 +1,166 @@
+[
+//单位
+
+	{
+		"name": "Worker",
+		"unitType": "Civilian",
+		"movement": 2,
+		"uniques": [
+			"Can build [Land] improvements on tiles",
+			"Can build [Water] improvements on tiles <for [AI player] Civilizations>",
+			"Automation is a primary action"
+		],
+		"cost": 70
+	},
+	{
+		"name": "Work Boats",
+		"unitType": "Civilian Water",
+		"movement": 4,
+		"cost": 30,
+		"requiredTech": "Sailing",
+		"uniques": [
+		    "Can instantly construct a [Fishing Boats] improvement <by consuming this unit> <for [Human player] Civilizations>",
+		    "Can instantly construct a [Fishing village] improvement <by consuming this unit> <for [Human player] Civilizations>",
+		    "Can instantly construct a [Fishing harbour] improvement <by consuming this unit> <for [Human player] Civilizations>",
+		    "Can instantly construct a [Commercial port] improvement <by consuming this unit> <for [Human player] Civilizations>",
+		    "[-50]% production cost <for [Human player] Civilizations>",
+			"Can instantly construct a [CI] improvement <[2] times> <after which this unit is consumed> <for [Human player] Civilizations> <hidden from users>",
+			"May create improvements on water resources <for [AI player] Civilizations>",
+			"Cannot enter ocean tiles <before discovering [Astronomy]>",
+            "Uncapturable",
+			"Automation is a primary action"
+		]
+	},
+	{
+		"name": "Settler",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 106,
+		"uniques": [
+			"Founds a new city <by consuming this unit>",
+			"Excess Food converted to Production when under construction",
+			"Requires at least [2] population"
+		],
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Tradition Settler",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 106,
+		"uniques": [
+			"Founds a new city <by consuming this unit>",
+			"Can only be built <after adopting [Oligarchy]>",
+			"Requires at least [2] population"
+		],
+		"hurryCostModifier": 20
+	},
+
+
+    {//行商-唐朝
+    	"name": "Itinerant Merchant",
+    	"unitType": "Civilian",
+	    "uniqueTo": "Tang dynasty",
+	    "cost": 75,
+    	"promotions": ["Ignore terrain cost"],
+	    "requiredTech": "Animal Husbandry",
+	    "requiredResource": "Itinerant Merchant Capacity",
+	    "uniques": [
+	        "[+1] Movement <after discovering [Engineering]>",
+	        "Only available <for [Human player] Civilizations> <hidden from users>",
+	
+	    // 地块
+	    "[This Unit] gains the [Stock Up] status for [4] turn(s) <for all movement> <in [{improved} {resource}] tiles> <in [non-[City center]] tiles> <for units without [Stock Up]> <for units without [Grain Cargo]> <for units without [Strategic Resource Cargo]> <for units without [Luxury Goods Cargo]> <hidden from users>",
+	
+	    "[This Unit] gains the [Grain Cargo] promotion <upon losing the [Stock Up] status> <in [{improved} {Bonus resource}] tiles> <hidden from users>", 
+	    "[This Unit] gains the [Strategic Resource Cargo] promotion <upon losing the [Stock Up] status> <in [{improved} {Strategic resource}] tiles> <hidden from users>", 
+	    "[This Unit] gains the [Luxury Goods Cargo] promotion <upon losing the [Stock Up] status> <in [{improved} {Luxury resource}] tiles> <hidden from users>", 
+	
+	    "[This Unit] loses the [Grain Cargo] promotion <costs [-15 Food] stats> <for units with [Grain Cargo]> <in [City center] tiles> <before the [Medieval era]> <hidden from users>", "[This Unit] loses the [Grain Cargo] promotion <costs [-20 Food] stats> <for units with [Grain Cargo]> <in [City center] tiles> <starting from the [Medieval era]> <before the [Industrial era]> <hidden from users>", "[This Unit] loses the [Grain Cargo] promotion <costs [-25 Food] stats> <for units with [Grain Cargo]> <in [City center] tiles> <starting from the [Industrial era]> <hidden from users>",
+	    "[This Unit] loses the [Strategic Resource Cargo] promotion <costs [-15 Production] stats> <for units with [Strategic Resource Cargo]> <in [City center] tiles> <before the [Medieval era]> <hidden from users>", "[This Unit] loses the [Strategic Resource Cargo] promotion <costs [-20 Production] stats> <for units with [Strategic Resource Cargo]> <in [City center] tiles> <starting from the [Medieval era]> <before the [Industrial era]> <hidden from users>", "[This Unit] loses the [Strategic Resource Cargo] promotion <costs [-25 Production] stats> <for units with [Strategic Resource Cargo]> <in [City center] tiles> <starting from the [Industrial era]> <hidden from users>",	
+	    "[This Unit] loses the [Luxury Goods Cargo] promotion <costs [-75 Gold] stats> <for units with [Luxury Goods Cargo]> <in [City center] tiles> <before the [Medieval era]> <hidden from users>", "[This Unit] loses the [Luxury Goods Cargo] promotion <costs [-100 Gold] stats> <for units with [Luxury Goods Cargo]> <in [City center] tiles> <starting from the [Medieval era]> <before the [Industrial era]> <hidden from users>", "[This Unit] loses the [Luxury Goods Cargo] promotion <costs [-125 Gold] stats> <for units with [Luxury Goods Cargo]> <in [City center] tiles> <starting from the [Industrial era]> <hidden from users>",
+	    "Comment [Can obtain Cargos in improved resource tiles(requires 3 turns)\nCan sell cargos in [City center] tiles\n-1 Movement if having Cargos]",
+	
+	    ],
+	    "movement": 2
+
+    },
+
+	{
+        "name": "Ngao Mbeba",
+        "uniqueTo": "Kongo",
+        "replaces": "Swordsman",
+        "unitType": "Sword",
+		"requiredResource": "Iron",
+        "movement": 2,
+        "strength": 14,
+        "cost": 75,
+        "requiredTech": "Iron Working",
+        "upgradesTo": "Longswordsman",
+        "obsoleteTech": "Steel",
+        "promotions": ["Ngao Mbeba ability"],
+        "hurryCostModifier": 20,
+        "attackSound": "metalhit"
+    },
+
+	{//重弩战象-高棉
+		"name": "Ballista Elephant",//名字
+		"unitType": "Siege",//单位类型
+		"uniqueTo": "Khmer",//独属文明
+		"replaces": "Trebuchet",//代替单位
+		"movement": 2,//移动力
+		"strength": 12,//攻击力
+		"rangedStrength": 14,//远程攻击力
+		"range": 3,//攻击范围
+		"cost": 140,//建造所需产能
+		"requiredTech": "Physics",//需要科技
+		"obsoleteTech": "Chemistry",//过时科技
+		"upgradesTo": "Cannon",//升级
+		"uniques":[ "[+200]% Strength <vs cities> <when attacking>"
+		],//能力	
+		"attackSound": "throw"//攻击音效
+	},
+	{
+		"name": "Holy site Engineer",
+		"unitType": "Civilian",
+		"uniques": [
+			"Unbuildable",
+			"Cannot be purchased",
+            "Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+        ],
+		"movement": 2
+	},
+
+	{//奥克奇塔乌-克里
+		"name": "Okihtcitaw",
+		"uniqueTo": "Cree",
+		"replaces": "Scout",
+		"unitType": "Scout",
+		"movement": 3,
+		"strength": 5,
+		"cost": 30,
+		"obsoleteTech": "Scientific Theory",
+		"uniques": [
+			"May upgrade to [Archer] through ruins-like effects",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": ["Ignore terrain cost"],
+		"attackSound": "nonmetalhit"
+	},
+	
+	{
+		"name": "Khevsur",
+		"uniqueTo": "Georgia",
+		"replaces": "Longswordsman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 22,
+		"cost": 120,
+		"requiredTech": "Steel",
+		"upgradesTo": "Musketman",
+		"obsoleteTech": "Gunpowder",
+		"requiredResource": "Iron",
+		"promotions": ["Description ability"],
+		"attackSound": "metalhit"
+	},
+]

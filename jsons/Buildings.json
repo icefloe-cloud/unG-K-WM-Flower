@@ -1,0 +1,639 @@
+[//建筑或奇观或国家奇观<if [Temporary Palace] is constructed in at least [1] of [All]>
+
+
+	{
+		"name": "Circus Maximus",
+		"cost": 125,
+		"happiness": 5,
+		"culture": 1,
+		"isNationalWonder": true,
+		"uniques": [
+			"Only available <if [Colosseum] is constructed in all [non-[Puppeted]] cities>",
+			"Cost increases by [30] per owned city",
+			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+		],
+		"requiredTech": "Horseback Riding"
+	},
+	{
+		"name": "National College",
+		"cost": 125,
+		"science": 3,
+		"culture": 1,
+		"isNationalWonder": true,
+		"percentStatBonus": {"science": 50},
+		"uniques": [
+			"Only available <if [Library] is constructed in all [non-[Puppeted]] cities>",
+		    "Cost increases by [30] per owned city",
+		    "Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+		],
+		"requiredTech": "Philosophy"
+	},
+	{
+		"name": "National Epic",
+		"cost": 125,
+		"culture": 1,
+		"isNationalWonder": true,
+		"uniques": [
+			"Only available <if [Monument] is constructed in all [non-[Puppeted]] cities>",
+	    	"[+25]% Great Person generation [in this city]",
+	    	"Cost increases by [30] per owned city",
+			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+		],
+	 	"requiredTech": "Drama and Poetry"
+	},
+	{
+		"name": "Heroic Epic",
+		"cost": 125,
+		"culture": 1,
+		"isNationalWonder": true,
+		"uniques": [
+			"Only available <if [Barracks] is constructed in all [non-[Puppeted]] cities>",
+			"All newly-trained [non-[Air]] units [in this city] receive the [Morale] promotion",
+			"Cost increases by [30] per owned city",
+			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+		],
+		"requiredTech": "Iron Working"
+	},
+	{
+		"name": "Grand Temple",
+		"cost": 125,
+		"culture": 1,
+		"faith": 8,
+		"uniques": [
+			"Only available <if [Temple] is constructed in all [non-[Puppeted]] cities>",
+			"Cost increases by [30] per owned city",
+			"[+100]% Natural religion spread [in this city]",
+			"Only available <when religion is enabled>",
+			"Can only be built <in [Holy] cities>",
+			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+		],
+		"requiredTech": "Theology",
+		"isNationalWonder": true
+	},
+	{
+		"name": "National Treasury",
+		"cost": 125,
+		"gold": 8,
+		"culture": 1,
+		"isNationalWonder": true,
+		"uniques": [
+			"Only available <if [Market] is constructed in all [non-[Puppeted]] cities>",
+		    "Cost increases by [30] per owned city",
+			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+		],
+		"requiredTech": "Guilds"
+	},
+	{
+		"name": "Oxford University",
+		"cost": 125,
+		"science": 3,
+		"culture": 1,
+		"isNationalWonder": true,
+		"uniques": [
+			"Only available <if [University] is constructed in all [non-[Puppeted]] cities>",
+			"Free Technology",
+			"Cost increases by [30] per owned city",
+			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+		],
+		"requiredTech": "Education"
+	},
+	{
+		"name": "Ironworks",
+		"cost": 125,
+		"production": 8,
+		"culture": 1,
+		"isNationalWonder": true,
+		"uniques": [
+			"Only available <if [Workshop] is constructed in all [non-[Puppeted]] cities>",
+			"Cost increases by [30] per owned city",
+			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+		],
+		"requiredTech": "Machinery"
+	},
+	{
+		"name": "Hermitage",
+		"cost": 125,
+		"percentStatBonus": {"culture": 50},
+		"culture": 5,
+		"isNationalWonder": true,
+		"uniques": [
+			"Only available <if [Opera House] is constructed in all [non-[Puppeted]] cities>",
+			"Cost increases by [30] per owned city",
+			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+		],
+		"requiredTech": "Architecture"
+	},
+
+	{//宫殿
+		"name": "Palace",
+		"isNationalWonder": true,
+		"production": 3,
+		"science": 3,
+		"gold": 3,
+		"culture": 1,
+		"cityStrength": 2,
+		"cost": 1,
+		"uniques": [
+			"'Palace.build'",
+			"Indicates the capital city",
+			"[+1 Gold, +1 Happiness] per [2] population [in this city] <after adopting [Monarchy]>"
+		]
+	},
+	{//"Can be purchased with [Gold] [in all cities] <after adopting [Legalism]>",
+		"name": "Move Temporary Palace",
+		"production": 3,
+		"science": 3,
+		"gold": 3,
+		"culture": 1,
+		"cityStrength": 2,
+		"cost": 20,
+		"uniques": [
+			"'Palace.build'",
+            "Can only be built <with [Temporary Palace.AuxiliaryCounter]>",
+			"Can be purchased for [120] [Gold] [in all cities]",
+			"Unbuildable <in cities with a [Relocation Temporary Palace]>",
+			//"Removes extra unhappiness from annexed cities",
+			"Remove [Relocation Temporary Palace] [in all cities]",
+			"Remove [Construct Temporary Palace] [in all cities]",
+			"[+1 Gold, +1 Happiness] per [2] population [in this city] <after adopting [Monarchy]>"
+		],
+		"isNationalWonder": true
+	},
+	{
+		"name":"Relocation Temporary Palace",
+		"production": 3,
+		"science": 3,
+		"gold": 3,
+		"culture": 1,
+		"cityStrength": 2,
+		"cost":20,
+		"uniques":[
+			"'Palace.build'",
+			"Can only be built <with [Temporary Palace.AuxiliaryCounter]>",
+			"Can be purchased for [120] [Gold] [in all cities]",
+			"Unbuildable <in cities with a [Move Temporary Palace]>",
+			//"Removes extra unhappiness from annexed cities",
+		    "Remove [Move Temporary Palace] [in all cities]",
+			"Remove [Construct Temporary Palace] [in all cities]",
+            "[+1 Gold, +1 Happiness] per [2] population [in this city] <after adopting [Monarchy]>"
+		],
+		"isNationalWonder": true
+	},
+	{//"Indicates the capital city", <hidden from users>
+		"name": "Construct Temporary Palace",
+		"production": 3,
+		"science": 3,
+		"gold": 3,
+		"culture": 1,
+		"cityStrength": 2,
+		"cost": 40,
+		"uniques": [
+			"'Palace.build'",
+			"Can only be built <after adopting [Legalism]> <without [Temporary Palace.AuxiliaryCounter]>",
+			"Can be purchased for [240] [Gold] [in all cities]",
+			//"Removes extra unhappiness from annexed cities",
+			"Instantly provides [1] [Temporary Palace.AuxiliaryCounter]",
+			"[+1 Gold, +1 Happiness] per [2] population [in this city] <after adopting [Monarchy]>"
+		],
+		"isNationalWonder": true
+	},
+	{
+		"name":"Temporary Palace",
+		"uniques":["Unbuildable"]
+	},
+
+	{
+		"name": "Tradition Four Cities",
+		"uniques": [
+			"Unbuildable",
+			"Destroyed when the city is captured"],
+	},
+	
+	//墙系建筑
+	{
+		"name": "Walls",
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"hurryCostModifier": 25,
+		"requiredTech": "Masonry",
+		"uniques": [
+		    "'Walls type build'"
+		    "Destroyed when the city is captured"
+		]
+	},
+	{
+		"name": "Castle",
+		"cityStrength": 7,
+		"cityHealth": 25,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Walls",
+		"requiredTech": "Chivalry",
+		"uniques": [
+		    "'Walls type build'"
+		    "Destroyed when the city is captured"
+		]
+	},
+	{
+		"name": "Kremlin",
+		"culture": 3,
+		"cityStrength": 12,
+		"isWonder": true,
+		"uniques": [
+		    "'Walls type build'"
+		    "[+25]% City Strength from defensive buildings"
+		],
+		"requiredTech": "Metallurgy",
+		"quote": "'The Kremlin is constantly changing the rules of the game to suit its purposes. We are not playing chess, we're playing roulette.' - Garry Kasparov"
+	},
+	{
+		"name": "Military Base",
+		"cityStrength": 12,
+		"cityHealth": 25,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Arsenal",
+		"requiredTech": "Replaceable Parts",
+		"uniques": [
+		    "'Walls type build'"
+		    "Destroyed when the city is captured"
+		]
+	},
+	
+    {//梦泽
+	    "name": "Market image",
+    	"gold": 2,
+		"cost": 100,
+    	"specialistSlots": {"Merchant": 1},
+    	"hurryCostModifier": 25,
+    	"percentStatBonus": {"gold": 25},
+		"requiredTech": "Currency",
+		"uniqueTo": "Dreamland",
+		"requiredBuilding": "Market",
+		"uniques": [
+			"Unsellable",
+			"Destroyed when the city is captured",
+		    "[+1 Science] <after adopting [Mercantilism]>"]
+	},
+	{
+		"name": "Bank image",
+		"gold": 2,
+		"cost": 200,
+		"specialistSlots": {"Merchant": 1},
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"gold": 25},
+		"requiredTech": "Banking"
+		"uniqueTo": "Dreamland",
+		"requiredBuilding": "Bank",
+		"uniques": [
+			"Unsellable",
+            "Destroyed when the city is captured",
+    		"[+1 Science] <after adopting [Mercantilism]>"]
+	},
+	{
+		"name": "Stock Exchange image",
+		"gold": 3,
+		"cost": 360,
+		"percentStatBonus": {"gold": 33},
+		"specialistSlots": {"Merchant": 2},
+		"hurryCostModifier": 15,
+		"requiredTech": "Electricity",
+		"uniqueTo": "Dreamland",
+		"requiredBuilding": "Stock Exchange",
+		"uniques": [
+			"Unsellable",
+			"Destroyed when the city is captured",
+	    	"[+1 Science] <after adopting [Mercantilism]>"]
+	},
+	{
+		"name": "Monument image",
+		"culture": 2,
+		"cost": 40,
+		"uniqueTo": "Dreamland",
+		"requiredBuilding": "Monument",
+		"hurryCostModifier": 40,
+		"uniques": [
+			"Unsellable",
+			"Destroyed when the city is captured",]
+	},
+	{
+		"name": "Amphitheater image",
+		"culture": 3,
+		"cost": 100,
+		"specialistSlots": {"Artist": 1},
+		"uniqueTo": "Dreamland",
+		"requiredBuilding": "Amphitheater",
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Unsellable",
+			"Destroyed when the city is captured",]
+	},
+	{
+		"name": "Opera House image",
+		"cost": 200,
+        "specialistSlots": {"Artist": 1},
+		"uniqueTo": "Dreamland",
+        "requiredBuilding": "Opera House",
+		"hurryCostModifier": 10,
+        "uniques": [
+			"Unsellable",
+			"Destroyed when the city is captured",]
+    },
+    {
+        "name": "Museum image",
+        "culture": 5,
+		"cost": 300,
+        "specialistSlots": {"Artist": 2},
+		"uniqueTo": "Dreamland",
+        "requiredBuilding": "Museum",
+		"hurryCostModifier": 0,
+        "uniques": [
+			"Unsellable",
+			"Destroyed when the city is captured",]
+    },
+    {
+        "name": "Broadcast Tower image",
+        "culture": 3,
+		"cost": 500,
+        "percentStatBonus": {"culture": 33},
+		"uniqueTo": "Dreamland",
+        "requiredBuilding": "Broadcast Tower",
+        "uniques": [
+			"Unsellable",
+			"Destroyed when the city is captured",]
+    },
+
+	{
+		"name": "Shrine image",
+		"faith": 1,
+		"cost": 40,
+		"uniqueTo": "Dreamland",
+        "requiredBuilding": "Shrine",
+		"uniques": [
+			"Unsellable",
+		    "Only available <when religion is enabled>",
+			"Destroyed when the city is captured",
+		    "[+1 Faith] <after adopting [Organized Religion]>"]
+	},
+    {
+        "name": "Temple image",
+        "faith": 2,
+		"cost": 100,
+		"uniqueTo": "Dreamland",
+        "requiredBuilding": "Temple",
+		"hurryCostModifier": 25,
+        "uniques": [
+			"Unsellable",
+			"Only available <when religion is enabled>",
+			"Destroyed when the city is captured",
+		    "[+1 Faith] <after adopting [Organized Religion]>",
+		    "[+10]% [Gold] <after adopting [Theocracy]>"]
+    },
+
+	{//引水渠
+		"name": "Aristoaqueduct",
+		"cost": 100,
+		"uniqueTo": "Aqueduct",
+		"requiredBuilding": "Tradition Four Cities",
+		"hurryCostModifier": 0,
+		"uniques": [
+			"Unsellable",
+			"Can only be built <after adopting [Aristocracy]>",
+			"Destroyed when the city is captured",
+			"[40]% Food is carried over after population increases [in this city]"],
+		"requiredTech": "Engineering"
+	},
+	{
+		"name": "Traditionaqueduct",
+		"cost": 100,
+		"uniqueTo": "Aqueduct",
+		"requiredBuilding": "Tradition Four Cities",
+		"hurryCostModifier": 0,
+		"uniques": [
+			"Unsellable",
+			"Can only be built <after adopting [Aristocracy]>",
+			"Destroyed when the city is captured",
+			"[40]% Food is carried over after population increases [in this city]"
+	  ],
+		"requiredTech": "Engineering"
+	},
+
+	{//唐朝
+		"name": "Hanlinyuan",
+		"uniqueTo": "Tang dynasty",
+		"replaces": "National Epic",
+		"cost": 125,
+		"culture": 1,
+		"isNationalWonder": true,
+		"uniques": [
+			"Only available <if [Monument] is constructed in all [non-[Puppeted]] cities>", 
+		    "[+25]% Great Person generation [in all cities]", 
+			"Cost increases by [10] per owned city"],
+		"requiredTech": "Drama and Poetry"
+	},
+
+	{//明朝
+		"name": "Great Wall of Ming Dynasty",
+		"uniqueTo": "Ming dynasty",
+		"cost": 250,
+		"culture": 1,
+		"isNationalWonder": true,
+		"uniques": [
+			"Free Social Policy",
+			"[+1 Culture] from every [Wonder]"
+		],
+		"requiredTech": "Philosophy"
+	},
+
+	{//刚果
+		"name": "Mbanza",
+		"replaces": "Granary",
+		"uniqueTo": "Kongo",
+		"cost": 60,
+		"food": 3,
+		"gold": 1,
+		"maintenance": 0,
+		"hurryCostModifier": 25,
+		"uniques": ["[+1 Food] from [Deer] tiles [in this city]",
+			"[+1 Food] from [Bananas] tiles [in this city]",
+			"[+1 Food] from [Wheat] tiles [in this city]"],
+		"requiredTech": "Pottery"
+	},
+	
+	{
+		"name":"Gain Kongo ability",
+		"uniques":[
+		    "[All] units gain the [Kongo ability] promotion",
+		    "Remove [Gain Kongo ability] [in this city]",
+		    "Unbuildable"
+		]
+	},
+
+	{//高棉
+		"name": "Baray",
+		"replaces": "Aqueduct",
+		"cost": 100,
+		"uniqueTo": "Khmer",
+		"hurryCostModifier": 0,
+		"uniques": [
+			"[50]% Food is carried over after population increases [in this city]"],
+		"requiredTech": "Engineering"
+	},
+	{
+		"name": "Prasat",
+		"uniqueTo": "Khmer",
+		"cost": 185,
+		"isNationalWonder": true,
+		"uniques": ["[1] free [Holy site Engineer] units appear"],
+	},
+
+	{//匈牙利
+		"name": "Thermal Bath",
+		"replaces": "Colosseum",
+		"uniqueTo": "Hungary",
+		"maintenance": 1,
+		"happiness": 3,
+		"hurryCostModifier": 25,
+		"requiredTech": "Construction"
+	},
+
+
+    {//格鲁吉亚
+		"name": "Production Unity",
+		"uniqueTo": "Georgia",
+		"isNationalWonder": true,
+		"uniques": [
+		    "[+1 Production] from every [Production]",
+		    "[+10]% [Production] [in all cities]",
+		    "Unbuildable",
+		    "Remove [Food Unity] [in capital]",
+		    "Remove [Gold Unity] [in capital]",
+		    "Remove [Science Unity] [in capital]",
+		    "Remove [Culture Unity] [in capital]",
+		    "Remove [Happiness Unity] [in capital]",
+		    "Remove [Faith Unity] [in capital]",   
+		],
+	},
+	{
+		"name": "Food Unity",
+		"uniqueTo": "Georgia",
+		"isNationalWonder": true,
+		"uniques": [
+		    "[+1 Food] from every [Food]",
+		    "[+10]% [Food] [in all cities]",
+		    "Unbuildable",
+		    "Remove [Production Unity] [in capital]",
+		    "Remove [Gold Unity] [in capital]",
+		    "Remove [Science Unity] [in capital]",
+		    "Remove [Culture Unity] [in capital]",
+		    "Remove [Happiness Unity] [in capital]",
+		    "Remove [Faith Unity] [in capital]",   
+		],
+	},
+	{
+		"name": "Gold Unity",
+		"uniqueTo": "Georgia",
+		"isNationalWonder": true,
+		"uniques": [
+		    "[+1 Gold] from every [Gold]",
+		    "[+10]% [Gold] [in all cities]",
+		    "Unbuildable",
+		    "Remove [Production Unity] [in capital]",
+		    "Remove [Food Unity] [in capital]",
+		    "Remove [Science Unity] [in capital]",
+		    "Remove [Culture Unity] [in capital]",
+		    "Remove [Happiness Unity] [in capital]",
+		    "Remove [Faith Unity] [in capital]",   
+		],
+	},
+    {
+		"name": "Science Unity",
+		"uniqueTo": "Georgia",
+		"isNationalWonder": true,
+		"uniques": [
+		    "[+1 Science] from every [Science]",
+		    "[+10]% [Science] [in all cities]",
+		    "Unbuildable",
+		    "Remove [Production Unity] [in capital]",
+		    "Remove [Food Unity] [in capital]",
+		    "Remove [Gold Unity] [in capital]",
+		    "Remove [Culture Unity] [in capital]",
+		    "Remove [Happiness Unity] [in capital]",
+		    "Remove [Faith Unity] [in capital]",   
+		],
+	},
+	{
+		"name": "Culture Unity",
+		"uniqueTo": "Georgia",
+		"isNationalWonder": true,
+		"uniques": [
+		    "[+1 Culture] from every [Culture]",
+		    "[+10]% [Culture] [in all cities]",
+		    "Unbuildable",
+		    "Remove [Production Unity] [in capital]",
+		    "Remove [Food Unity] [in capital]",
+		    "Remove [Gold Unity] [in capital]",
+		    "Remove [Science Unity] [in capital]",
+		    "Remove [Happiness Unity] [in capital]",
+		    "Remove [Faith Unity] [in capital]",   
+		],
+	},
+	{
+		"name": "Happiness Unity",
+		"uniqueTo": "Georgia",
+		"isNationalWonder": true,
+		"uniques": [
+		    "[+1 Happiness] from every [Happiness]",
+		    "[+10]% [Happiness] [in all cities]",
+		    "Unbuildable",
+		    "Remove [Production Unity] [in capital]",
+		    "Remove [Food Unity] [in capital]",
+		    "Remove [Gold Unity] [in capital]",
+		    "Remove [Science Unity] [in capital]",
+		    "Remove [Culture Unity] [in capital]",
+		    "Remove [Faith Unity] [in capital]",   
+		],
+	},
+	{
+		"name": "Faith Unity",
+		"uniqueTo": "Georgia",
+		"isNationalWonder": true,
+		"uniques": [
+		    "[+1 Faith] from every [Faith]",
+		    "[+10]% [Faith] [in all cities]",
+		    "Unbuildable",
+		    "Remove [Production Unity] [in capital]",
+		    "Remove [Food Unity] [in capital]",
+		    "Remove [Gold Unity] [in capital]",
+		    "Remove [Science Unity] [in capital]",
+		    "Remove [Culture Unity] [in capital]",
+		    "Remove [Happiness Unity] [in capital]",   
+		],
+	},
+	
+	{
+		"name": "Tsikhe",
+		"replaces": "Castle",
+		"cost": 120,
+		"uniqueTo": "Georgia",
+		"culture": 1,
+		"cityStrength": 7,
+		"cityHealth": 25,
+		"hurryCostModifier": 25,
+		"requiredBuilding": "Walls",
+		"requiredTech": "Chivalry",
+		"uniques": [
+		    "'Walls type build'"
+		    "Destroyed when the city is captured",
+		    "[+1 Culture, +1 Faith] from every ['Walls type build'] <in this city>",
+		    
+		    "[+1 Production] from every ['Walls type build'] <in this city> <if [Production Unity] is constructed>",
+		    "[+1 Food] from every ['Walls type build'] <in this city> <if [Food Unity] is constructed>",
+		    "[+1 Gold] from every ['Walls type build'] <in this city> <if [Gold Unity] is constructed>",
+		    "[+1 Science] from every ['Walls type build'] <in this city> <if [Science Unity] is constructed>",
+		    "[+1 Culture] from every ['Walls type build'] <in this city> <if [Culture Unity] is constructed>",
+		    "[+1 Happiness] from every ['Walls type build'] <in this city> <if [Happiness Unity] is constructed>",
+		    "[+1 Faith] from every ['Walls type build'] <in this city> <if [Faith Unity] is constructed>",
+		    
+		    "[+200]% Production when constructing ['Walls type build'] buildings [in this city]"
+		]
+	},
+]

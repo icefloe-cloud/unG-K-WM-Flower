@@ -1,0 +1,98 @@
+[//设施
+
+    {
+		"name": "Fishing Boats",
+		"terrainsCanBeBuiltOn": ["Coast"],
+		"food": 1,
+        "turnsToBuild": 1,
+		"techRequired": "Sailing",
+		"uniques": [
+            "'CI'",
+            "[+1 Gold] <after discovering [Compass]>",
+            "Can only be built to improve a resource",
+            "Pillaging this improvement yields approximately [+10 Gold]"],
+		"shortcutKey": "F"
+	},
+	{
+        "name": "Fishing village",
+        "terrainsCanBeBuiltOn": ["Coast"],
+        "food": 1,
+        "turnsToBuild": 7,
+        "techRequired": "Sailing",
+        "uniques": [
+            "'CI'",
+            "[+1 Food] <after discovering [Navigation]>",
+            "Must be next to [Land]",
+            "Cannot be built on [resource] tiles",
+            "Pillaging this improvement yields approximately [+18 Gold]"        ]
+    },
+	{
+        "name": "Fishing harbour",
+        "terrainsCanBeBuiltOn": ["Coast"],
+        "food": -1,
+        "production": 2,
+        "turnsToBuild": 7,
+        "techRequired": "Sailing",
+        "uniques": [
+            "'CI'",
+            "[+1 Production] <after discovering [Navigation]>",
+            "Must be next to [Land]",
+            "Cannot be built on [resource] tiles",
+            "Pillaging this improvement yields approximately [+20 Gold]"
+        ]
+    },
+	{
+        "name": "Commercial port",
+        "terrainsCanBeBuiltOn": ["Coast"],
+        "gold": 1,
+        "turnsToBuild": 7,
+        "techRequired": "Guilds",
+        "uniques": [
+            "'CI'",
+            "[+1 Gold] <after discovering [Compass]>",
+            "Must be next to [Land]",
+            "Cannot be built on [resource] tiles",
+            "Pillaging this improvement yields approximately [+20 Gold]"
+        ]
+    },
+
+    {
+		"name": "Mekewap",//名字
+		"terrainsCanBeBuiltOn": ["Land"],//建造地块
+		"production": 1,
+		"turnsToBuild": 7,//建造所需的回合
+		"techRequired": "Pottery",//需要科技
+		"uniqueTo": "Cree",//文明专属
+		"uniques": [
+			"[+1 Food] <in tiles adjacent to [{improved} {Bonus}] tiles> <before discovering [Civil Service]>",
+			"[+1 Production] <in tiles adjacent to [{improved} {Strategic}] tiles> <before discovering [Civil Service]>",
+			"[+2 Gold] <in tiles adjacent to [{improved} {Luxury}] tiles> <before discovering [Civil Service]>",
+
+			"[+1 Food] for each adjacent [{improved} {Bonus}] <after discovering [Civil Service]>  <before discovering [Biology]>",
+			"[+1 Production] for each adjacent [{improved} {Strategic}] <after discovering [Civil Service]> <before discovering [Scientific Theory]>",
+			"[+2 Gold] for each adjacent [{improved} {Luxury}] <after discovering [Civil Service]> <before discovering [Economics]>",
+
+			"[+2 Food] for each adjacent [{improved} {Bonus}] <after discovering [Biology]>",
+			"[+2 Production] for each adjacent [{improved} {Strategic}] <after discovering [Scientific Theory]>",
+			"[+4 Gold] for each adjacent [{improved} {Luxury}] <after discovering [Economics]>",
+            
+            "Pillaging this improvement yields approximately [+20 Gold]"
+		],//能力
+    },
+
+	{//{non-[All Road]} {Improvement}
+		"name": "Manor",//名字
+		"terrainsCanBeBuiltOn": ["Land"],//建造地块
+		"food": 1,
+		"turnsToBuild": 7,//建造所需的回合
+		"techRequired": "Pottery",//需要科技
+		"uniqueTo": "Hungary",//文明专属
+		"uniques": [
+		    //"Cannot be built on [Land] tiles <within [1] tiles of a [Manor]>",
+            "[+1 Food] <with [2] to [6] neighboring [{non-[Manor]} {Improvement}] tiles>",
+            "[+1 Food] <with [4] to [6] neighboring [{non-[Manor]} {Improvement}] tiles>",
+            "[+1 Food] <with [6] to [6] neighboring [{non-[Manor]} {Improvement}] tiles>",
+            "Pillaging this improvement yields approximately [+20 Gold]"
+		],//能力
+	},
+]

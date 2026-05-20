@@ -1,0 +1,51 @@
+[
+    //晋升
+    // 行商
+    
+    // 进货
+    {
+        "name": "Stock Up",
+        "uniques":["Cannot move"]
+    },
+    {
+        "name": "Grain",
+        "uniques":["[-1] Movement"]
+    },
+    
+    // 货物
+    {
+        "name": "Grain Cargo",
+        "uniques":["[-1] Movement", "Gain [-1] [Gold] <upon turn end>"]
+    },
+
+    {
+        "name": "Strategic Resource Cargo",
+        "uniques":["[-1] Movement", "Gain [-1] [Gold] <upon turn end>"]
+    },
+
+    {
+        "name": "Luxury Goods Cargo",
+        "uniques":["[-1] Movement", "Gain [-1] [Gold] <upon turn end>"]
+    },
+
+    {//刚果
+        "name": "Kongo ability",
+        "uniques": [
+            "Double movement in [Forest]","Double movement in [Jungle]"
+        ]
+    },
+    {
+        "name": "Ngao Mbeba ability",
+        "uniques": [
+            "[+25]% Strength <vs [Ranged] units> <when defending>"
+        ]
+    },
+    
+    {
+        "name": "Description ability",
+        "uniques": [
+            "[+15]% Strength <when fighting in [Hill] tiles>",
+            "Double movement in [Hill]"
+        ]
+    },
+    ]

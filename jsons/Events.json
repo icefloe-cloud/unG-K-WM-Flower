@@ -1,0 +1,37 @@
+[//事件
+    {
+        "name": "Strength in Unity",//名字
+        "text": "",//文本
+        "choices": [
+            {
+                "text": "Production Unity",//文本模组
+                "uniques": ["Gain a free [Production Unity] [in capital]"]//能力
+            },
+            {
+                "text": "Food Unity",
+                "uniques": ["Gain a free [Food Unity] [in capital]"]
+            },
+            {
+                "text": "Gold Unity",
+                "uniques": ["Gain a free [Gold Unity] [in capital]"]
+            },
+            {
+                "text": "Science Unity",
+                "uniques": ["Gain a free [Food Unity] [in capital]"]
+            },
+            {
+                "text": "Culture Unity",
+                "uniques": ["Gain a free [Food Unity] [in capital]"]
+            },
+            {
+                "text": "Happiness Unity",
+                "uniques": ["Gain a free [Food Unity] [in capital]"]
+            },
+            {
+                "text": "Faith Unity",
+                "uniques": ["Gain a free [Food Unity] [in capital]"]
+            },
+
+        ]//选择
+    },
+    ]

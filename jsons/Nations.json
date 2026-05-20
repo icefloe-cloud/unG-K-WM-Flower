@@ -1,0 +1,374 @@
+[//文明
+
+    {//梦泽
+		"name": "Dreamland",
+		"leaderName": "Leader",
+		"personality": "Korea",
+		"startBias": ["Lakes"],
+
+        "startIntroPart1": "Let's begin!",
+        
+        "declaringWar": "Your behavior has angered me. I declare a just war against you",
+		"attacked": "How dare you attack me! My sword will be the only thing waiting for you, and you will return with nothing",
+		"defeated": "Although I failed, I will come back one day. I hope you can treat my people well",
+		
+		"introduction": "I welcome you very much, dear stranger, do you need to sit down and talk?",
+		
+		"neutralHello": "Greetings!",
+		"hateHello": "What?",
+		
+		"tradeRequest": "I will provide enough goods to impress you, and I hope the goods you provide will also impress me",
+		"outerColor": [55,0,101],
+		"innerColor": [233,226,158],
+		"uniqueName": "Separate Governance for Khitan and Han Peoples",
+	    "uniqueText": "",
+        "uniques": [
+			    "\"Borrows\" city names from other civilizations in the game",
+				"[+100]% Production when constructing [Shrine image] buildings [in all cities] <after adopting [Piety]>",
+				"[+100]% Production when constructing [Temple image] buildings [in all cities] <after adopting [Piety]>"],
+		"cities": ["Dreamland"]
+    },
+	{//引水渠
+		"name": "Aqueduct",
+		"leaderName": "Leader",
+		"personality": "Korea",
+		"startBias": ["Mountain"],
+
+        "startIntroPart1": "Let's begin!",
+        
+        "declaringWar": "Your behavior has angered me. I declare a just war against you",
+		"attacked": "How dare you attack me! My sword will be the only thing waiting for you, and you will return with nothing",
+		"defeated": "Although I failed, I will come back one day. I hope you can treat my people well",
+		
+		"introduction": "I welcome you very much, dear stranger, do you need to sit down and talk?",
+		
+		"neutralHello": "Greetings!",
+		"hateHello": "What?",
+		
+		"tradeRequest": "I will provide enough goods to impress you, and I hope the goods you provide will also impress me",
+		"outerColor": [255,255,255],
+		"innerColor": [0,0,0],
+		"uniqueName": "Aqueduct tradition",
+	    "uniqueText": "",
+        "uniques": [
+			    "\"Borrows\" city names from other civilizations in the game"],
+		"cities": ["Holy aqueduct","Golden aqueduct","Ancient Canal City","Aqueduct City"]
+    },
+	{ //唐朝
+		"name": "Tang dynasty",
+		"leaderName": "Li Shimin",
+		"adjective": ["Chinese"],
+		"preferredVictoryType": "Scientific",
+		"personality": "Wu Zetian",
+		"outerColor": [174,127,10],
+		"innerColor": [255,240,143],
+		"startBias": ["Plains"],
+		"uniqueName": "Good government and harmonious people",
+		"uniques": [
+			"[-100]% maintenance cost for [all] buildings [in all cities]",
+			"[-100]% maintenance costs <for [All] units>",
+			"Provides [1] [Itinerant Merchant Capacity]",
+			"Provides [1] [Itinerant Merchant Capacity] <after discovering [Animal Husbandry]>",
+			"Provides [1] [Itinerant Merchant Capacity] <after discovering [Sailing]>",
+			"Provides [1] [Itinerant Merchant Capacity] <after discovering [Mathematics]>",
+			"Provides [1] [Itinerant Merchant Capacity] <after discovering [Engineering]>",
+			"Provides [1] [Itinerant Merchant Capacity] <after discovering [Guilds]>",
+            "Provides [1] [Itinerant Merchant Capacity] <after discovering [Compass]>",
+			"Provides [1] [Itinerant Merchant Capacity] <after discovering [Banking]>"
+		],
+		"cities": [
+			"Chang'an",
+			"Luoyang",
+			"Dunhuang",
+			"Kaifeng",
+			"Lanzhou",
+			"Taiyuan",
+			"Chengdu",
+			"Hangzhou",
+			"Yangzhou",
+			"Nanjing",
+			"Guangzhou",
+			"Xianyang",
+			"Zhengzhou",
+			"Wuhan",
+			"Chongqing",
+			"Beijing",
+			"Shanghai",
+			"Shenzhen",
+			"Tianjin",
+			"Suzhou",
+			"Qingdao",
+			"Fuzhou",
+			"Nanning",
+			"Urumqi",
+			"Guiyang",
+			"Kunming",
+			"Harbin",
+			"Shenyang",
+			"Xiamen",
+			"Nanning",
+			"Haikou",
+			"Dalian"
+		]
+	},
+    { //明朝
+		"name": "Ming dynasty",
+		"leaderName": "Zhu Di",
+		"adjective": ["Ming"],
+		"outerColor": [0,128,0],
+		"innerColor": [255,255,255],
+		"startBias": ["Jungle","Marsh"],
+		"preferredVictoryType": "Cultural",
+		"uniqueName": "the Great Reign of Yong'le Emperor",
+		"uniques": [
+			"[+1 Science, +1 Culture, +1 Gold] per [2] population [in all cities] <in cities with at least [6] [Population]>",
+		],
+		"cities": [
+			"Beijing",
+			"Nanjing",
+			"Suzhou",
+			"Hangzhou",
+			"Xi'an",
+			"Kaifeng",
+			"Wuhan",
+			"Changsha",
+			"Fuzhou",
+			"Guangzhou",
+			"Quanzhou",
+			"Ningbo",
+			"Shaoxing",
+			"Wenzhou",
+			"Taizhou",
+			"Yangzhou",
+			"Chengdu",
+			"Kunming",
+			"Lanzhou",
+			"Zhengzhou"
+		]
+	},
+	{ //刚果
+        "name": "Kongo",
+        "leaderName": "Nzinga Mbande",
+        "startBias": ["Jungle","Forest"],
+        "preferredVictoryType": "Cultural",
+        "startIntroPart1": "Hail to you, brave Nzinga Mbande, Queen of the Ndongo and Matamba, whose beauty is matched only by your cunning. Your Kingdom is part of the great Kingdom of Kongo, situated at the mouth of the mighty Congo River in west-central Africa. You defied tradition by claiming two thrones and are remembered for standing bravely against the onslaught of European imperialism. When the Portuguese invaded your lands, you escaped death and shrewdly manipulated the Dutch into sending you aid. Together you turned back the army of the Portuguese at the Battle of Kombi. Yet, ever faced with threats both inside and out, the never-ending war took its tool, and in the end not even your bravery could stop the march of foreign crowns.",
+        "startIntroPart2": "Mighty Queen of Kongo, your prople has been chained and sold into slavery. Yet, your old alliances stand firm and await your call. It is time to return, to instill your strenght and spirit and lead your people to battle once more. Can you restore your war-torn land? Can you build a civilization that will stand the test of time?",
+        "declaringWar": "Me and my warriors come to set your lands and your flags on fire!",
+        "attacked": "Go ahead, send your soldiers! We will melt into the trees and strike at you from the stones.",
+        "defeated": "Your swords cleave only flesh. Your chains bind only hands. Our soul remains ours.",
+        "introduction": "I am Nzinga, Muchino a Muhato of the Ndongo and Matamba. Please sit anywhere, and do not look down upon me and dismiss me as a woman: I am the equal of any King, both in governance and in battle.",
+        "neutralHello": "Greetings.",
+        "hateHello": "What do you want?",
+        "tradeRequest": "Let us exchange ideas, gold, and good... just not land." ,
+        "outerColor": [255,227,151],
+        "innerColor": [96,11,99],
+        "uniqueName": "Unique Ability",
+        "uniques": [
+			"[All] units gain the [Kongo ability] promotion",
+			"Gain a free [Gain Kongo ability] [in capital] <upon gaining a [All] unit>",
+			"[+2 Faith, +1 Happiness] from all [Wonder] buildings <starting from the [Classical era]>",
+			"Gain a free [Circus Maximus] [in capital] <after discovering [Horseback Riding]>",
+			"Gain a free [National College] [in capital] <after discovering [Philosophy]>",
+			"Gain a free [National Epic] [in capital] <after discovering [Drama and Poetry]>",
+			"Gain a free [Heroic Epic] [in capital] <after discovering [Iron Working]>",
+			"Gain a free [Grand Temple] [in capital] <after discovering [Theology]>",
+			"Gain a free [National Treasury] [in capital] <after discovering [Guilds]>",
+			"Gain a free [Oxford University] [in capital] <after discovering [Education]>",
+			"Gain a free [Ironworks] [in capital] <after discovering [Machinery]>",
+			"Gain a free [Hermitage] [in capital] <after discovering [Architecture]>"
+		],
+        "cities": [
+            "M'banza-Kongo","M'banza-Ngungu","M'banza-Nsundi","M'banza-Mbata","M'banza-Bakwanga","M'banza-Mpangu","M'banza-Wembo","M'banza-Lovata","M'banza-Mbumbi","M'banza-Mbamba",
+            "M'banza-Mbwila","M'banza-Mpinda","M'banza-Mpemda","M'banza-Kwila","M'banza-Soyo","M'banza-Kwango","M'banza-Bakavu","M'banza-Sanga","M'banza-Katango","M'banza-Nkunga",
+            "M'banza-Nkondo","M'banza-Ndongo","M'banza-Lembabula","M'banza-Kibangu","M'banza-Manga","M'banza-Mulumbi","M'banza-Mbandaka","M'banza-Kindu","M'banza-Makuta","M'banza-Zombo",
+            "M'banza-Matadi","M'banza-Lubumbashi","M'banza-Kalemie","M'banza-Kikwit","M'banza-Popokabaka","M'banza-Kinshasa","M'banza-Loango"
+        ],
+        "spyNames": [
+            "Gumede","Jama","Mageba","Malanda","Mnguni","Ndaba","Phunga","Senzangakhona","Balungile","Samkelisiwe"
+        ]
+    },
+	{
+        "name": "Khmer",//文明名字
+	    "leaderName": "Jayavarman VII",//领导人
+		"personality": "Khmer",//个性称呼
+		"adjective": ["Khmer"],//形容词
+		"startBias": ["Avoid [Tundra]","Avoid [Desert]","River"],//初始点偏向
+        "preferredVictoryType": "Cultural",
+		"outerColor": [107, 18, 111],//外圈颜色
+		"innerColor": [239, 136, 55],//内圈颜色
+		"uniqueName": "King's Monastery",//能力名字
+		"uniqueText": "",//介绍文本
+		"uniques": [
+
+			"[+1 Food, +1 Faith] from every [Improvement] <with [1] to [6] neighboring [Holy site] tiles>",
+            "[+1 Food, +1 Faith] from every [Improvement] <with [2] to [6] neighboring [Holy site] tiles>",
+            "[+1 Food, +1 Faith] from every [Improvement] <with [3] to [6] neighboring [Holy site] tiles>",
+            "[+1 Food, +1 Faith] from every [Improvement] <with [4] to [6] neighboring [Holy site] tiles>",
+            "[+1 Food, +1 Faith] from every [Improvement] <with [5] to [6] neighboring [Holy site] tiles>",
+            "[+1 Food, +1 Faith] from every [Improvement] <with [6] to [6] neighboring [Holy site] tiles>"
+
+		],//能力
+		"cities": [
+            "Angkor Thom",
+            "Angkor Wat",
+            "Hariharalaya",
+            "Yaśodharapura",
+            "Mahendraparvata",
+            "Vimayapura",
+            "Indrapura",
+            "Lingapura",
+            "Preah Vihear",
+            "Bhavapura",
+            "Kompong Svay",
+            "Nagara Jayasri",
+            "Vyadhapura",
+            "Chaturmukha",
+            "Dviradapura",
+            "Rajavihara",
+            "Amarendrapura",
+            "Phanom Rung",
+            "Iśvarapura",
+            "Muang Tam",
+            "Angkor Borei",
+            "Banteay Kdei",
+            "Phetchaburi",
+            "Chaiya",
+            "Isanapura",
+            "Pre Rup",
+            "Beng Melea",
+            "Lavodayapura",
+            "Shrestapura",
+            "Aninditapura"
+            ]//城市名
+    }
+    {//克里
+		"name": "Cree",
+		"leaderName": "Poundmaker",
+		"adjective": ["Cree"],
+		"startBias": ["Jungle"],
+		"preferredVictoryType": "Scientific",
+		"personality": "Pacal",
+		"outerColor": [0, 128, 128],
+		"innerColor": [255, 224, 102],
+		"uniqueName": "Nîhithaw",
+		"uniques": [
+            "[+1 Food, +1 Production, +2 Gold] [in all cities connected to capital]",
+            "[-50]% construction time for [All Road] improvements",
+            "New [Okihtcitaw] units start with [10] XP [in all cities]"
+		],
+		"cities": [
+            "Xandar",
+            "Hala",
+            "Kree-Lar",
+            "New Hala",
+            "M'Kraan",
+            "Tivan",
+            "Skrull",
+            "Pama",
+            "Kree-Em",
+            "Kree-Tor",
+            "Kree-Tus",
+            "Kotati",
+            "Mynar",
+            "Cassandra",
+            "Galador",
+            "Morpheus",
+            "Kree-Met",
+            "Azuros",
+            "Hala-Vak",
+            "Quarra"
+        ]
+	},
+
+    {//匈牙利
+        "name": "Hungary",
+        "leaderName": "Andras II",
+        "startBias": ["Avoid [Coast]","River"],
+        "preferredVictoryType": "Domination",
+        "startIntroPart1": "Salute András II, King of Hungary and crusader in distant lands. Your reign saw bold reforms, baronial conflicts, and the issuing of the Golden Bull, which etched Hungary's rights into law for centuries.",
+        "startIntroPart2": "King András, will you once again uphold the law and cross swords with tyrants? Can you build a civilization that will stand the test of time?",
+        "declaringWar": "The nobility rides with me—your fate is sealed beneath Hungarian steel.",
+        "attacked": "The fields of Hungary are not easily conquered. Prepare for bitter resistance.",
+        "defeated": "I go to history's judgment with honor. Hungary shall rise again.",
+        "introduction": "Hail to your kingdom. I am Andras II, the king of Hungary and Croatia.",
+        "neutralHello": "The Danube flows steadily, and so do the traditions of my realm. State your purpose, clearly.",
+        "hateHello": "You come with ambition, not respect. My court is no place for vipers or fools.",
+        "tradeRequest": "Let our caravans cross borders in peace, not our armies in anger. Shall we trade?",
+        "outerColor": [21, 108, 49],
+        "innerColor": [254, 129, 19],
+        "uniqueName": "Pearl of the Danube",
+        "uniques": [
+			"[+10]% Production when constructing [All] buildings [in all cities] <in [Fresh Water] tiles>",
+            "[+10]% Production when constructing [All] units [in all cities] <in [Fresh Water] tiles>",
+			"[-25]% construction time for [All] improvements <in [Fresh Water] tiles>"
+        ],
+        "cities": [
+            "Buda","Pest","Bratislava","Szeged","Szekesfehervar","Debrecen","Pecs","Miskolc","Esztergom","Visegrad",
+            "Temesvar","Obuda","Gyor","Nyiregyhaza","Kecskemet","Szombathely","Becs","Erd","Tatabanya","Kaposvar",
+            "Sopron","Veszprem","Bekescsaba","Zalaegerszeg","Eger","Nagykanizsa","Dunaujvaros","Hodmezovasarhely","Szigetszentmiklos","Dunakeszi",
+            "Cegled","Salgotarjan","Ozd","Vac","Mosonmagyarovar","Szekszard","Papa","Hajduboszormeny","Kiskunfelegyhaza"
+        ]
+    },
+    
+    {
+		"name": "Georgia",
+		"leaderName": "Tamar",
+		"preferredVictoryType": "Domination",
+		"declaringWar": "God fights with us. You stand alone.",
+		"attacked": "Georgian hearts will not tremble before your multitudes.",
+		"defeated": "Walls weren't enough to save Georgia from ruin. Neither was I.",
+		"introduction": "I am Tamar of Georgia. Say what you will and be on your way.",
+		"neutralHello": "I notice your sincerity.",
+		"hateHello": "You are a detestable person.",
+		"tradeRequest": "Georgian merchants bring many gifts.",
+		"outerColor": [
+			255,
+			255,
+			255
+		],
+		"innerColor": [
+			254,
+			124,
+			19
+		],
+		"uniqueName": "Glory of the World, Kingdom and Faith",
+		"uniques": [
+            "Triggers a [Strength in Unity] event <upon entering a new era> <after turn number [0]>",
+            "Triggers a [Strength in Unity] event <upon constructing [World Wonder]>",
+            "[+50]% Production when constructing ['Walls type build'] buildings [in all cities]"
+		],
+		"cities": [
+			"Tbilisi",
+			"Kaspi",
+			"Rustavi",
+			"Tskhumi",
+			"Akhalkalaki",
+			"Kutaisi",
+			"Zugdidi",
+			"Batumi",
+			"Gori",
+			"Mtskheta",
+			"Poti",
+			"Telavi",
+			"Akhali Atoni",
+			"Akhaltsikhe",
+			"Bichvinta",
+			"Borjomi",
+			"Dedoplistsqaro",
+			"Dmanisi",
+			"Geguti",
+			"Mutso",
+			"Nicopsia",
+			"Omalo",
+			"Oni",
+			"Tianeti",
+			"Tmogvi",
+			"Tsageri",
+			"Amasya",
+			"Tsalka",
+			"Tskhinvali",
+			"Urbnisi",
+			"Zestafoni"
+		]
+	},
+    ]
