@@ -51,7 +51,9 @@
 		"uniqueName": "Aqueduct tradition",
 	    "uniqueText": "",
         "uniques": [
-			    "\"Borrows\" city names from other civilizations in the game"],
+		    "\"Borrows\" city names from other civilizations in the game",
+			"Provides a [Tradition Four Cities] in your first [4] cities for free <after adopting [Tradition]>"   
+		],
 		"cities": ["Holy aqueduct","Golden aqueduct","Ancient Canal City","Aqueduct City"]
     },
 	{ //唐朝
