@@ -148,7 +148,7 @@
 		"attackSound": "nonmetalhit"
 	},
 	
-	{
+	{//格鲁吉亚
 		"name": "Khevsur",
 		"uniqueTo": "Georgia",
 		"replaces": "Longswordsman",
