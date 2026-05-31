@@ -29,17 +29,12 @@
                 "name": "Legalism",
                 "uniques": [
                     "Comment [Enables you to build [Temporary Palace]]",
+                    //"May buy [{National Wonder} {Construct Temporary Palace}] buildings for [400] [Gold] [in all cities]",
+                    //"May buy [{National Wonder} {Relocation Temporary Palace}] buildings for [150] [Gold] [in all cities]",
+                    //"May buy [{National Wonder} {Move Temporary Palace}] buildings for [150] [Gold] [in all cities]",
                     "Provides a [Monument] in your first [3] cities for free <if [Monument] is constructed in all [in capital] cities>",
                     "Provides a [Library] in your first [3] cities for free <if [Library] is constructed in all [in capital] cities>",
-                    "Provides a [Barracks] in your first [3] cities for free <if [Barracks] is constructed in all [in capital] cities>",
                     "Provides a [Colosseum] in your first [3] cities for free <if [Colosseum] is constructed in all [in capital] cities>",
-                    "Provides a [Temple] in your first [3] cities for free <if [Temple] is constructed in all [in capital] cities>",
-                    "Provides a [Market] in your first [3] cities for free <if [Market] is constructed in all [in capital] cities>",
-                    "Provides a [Workshop] in your first [3] cities for free <if [Workshop] is constructed in all [in capital] cities>",
-                    "Provides a [University] in your first [3] cities for free <if [University] is constructed in all [in capital] cities>",
-                    "Provides a [Opera House] in your first [3] cities for free <if [Opera House] is constructed in all [in capital] cities>",
-                    "Provides a [Constabulary] in your first [3] cities for free <if [Constabulary] is constructed in all [in capital] cities>",
-                    "Unavailable <after adopting [Republic]> <after adopting [Citizenship]>"
                 ],
                 "row": 1,
                 "column": 3
@@ -61,7 +56,7 @@
                 "name": "Landed Elite",
                 "uniques": [
                     "[+2 Food] from every ['Palace.build']",
-                    "Comment [Each city founded increases production cost of national wonder -67% less than normal]",
+                    "Comment [Each city founded increases production cost of national wonder -50% less than normal]",
                     "Unavailable <after adopting [Republic]> <after adopting [Citizenship]>"
                 ],
                 "row": 2,
@@ -70,7 +65,7 @@
             {
                 "name": "Monarchy",
                 "uniques": [
-                    "[25]% Food is carried over after population increases [in capital]",
+                    "[20]% Food is carried over after population increases [in capital]",
                     "Comment [+1 Gold, +1 Happiness per 2 population in all 'Palace.build']",
                 ],
                 "row": 2,

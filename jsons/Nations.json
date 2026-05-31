@@ -256,7 +256,6 @@
 		"uniques": [
             "[+1 Food, +1 Production, +2 Gold] [in all cities connected to capital]",
             "[-50]% construction time for [All Road] improvements",
-            "New [Okihtcitaw] units start with [10] XP [in all cities]"
 		],
 		"cities": [
             "Xandar",
@@ -301,8 +300,7 @@
         "uniqueName": "Pearl of the Danube",
         "uniques": [
 			"[+10]% Production when constructing [All] buildings [in all cities] <in [Fresh Water] tiles>",
-            "[+10]% Production when constructing [All] units [in all cities] <in [Fresh Water] tiles>",
-			"[-25]% construction time for [All] improvements <in [Fresh Water] tiles>"
+			"[-20]% construction time for [All] improvements <in [Fresh Water] tiles>"
         ],
         "cities": [
             "Buda","Pest","Bratislava","Szeged","Szekesfehervar","Debrecen","Pecs","Miskolc","Esztergom","Visegrad",
