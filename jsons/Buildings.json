@@ -10,7 +10,7 @@
 		"uniques": [
 			"Only available <if [Colosseum] is constructed in all [non-[Puppeted]] cities>",
 			"Cost increases by [30] per owned city",
-			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+			"Cost increases by [-15] per owned city <after adopting [Landed Elite]>"
 		],
 		"requiredTech": "Horseback Riding"
 	},
@@ -24,7 +24,7 @@
 		"uniques": [
 			"Only available <if [Library] is constructed in all [non-[Puppeted]] cities>",
 		    "Cost increases by [30] per owned city",
-		    "Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+		    "Cost increases by [-15] per owned city <after adopting [Landed Elite]>"
 		],
 		"requiredTech": "Philosophy"
 	},
@@ -37,7 +37,7 @@
 			"Only available <if [Monument] is constructed in all [non-[Puppeted]] cities>",
 	    	"[+25]% Great Person generation [in this city]",
 	    	"Cost increases by [30] per owned city",
-			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+			"Cost increases by [-15] per owned city <after adopting [Landed Elite]>"
 		],
 	 	"requiredTech": "Drama and Poetry"
 	},
@@ -50,7 +50,7 @@
 			"Only available <if [Barracks] is constructed in all [non-[Puppeted]] cities>",
 			"All newly-trained [non-[Air]] units [in this city] receive the [Morale] promotion",
 			"Cost increases by [30] per owned city",
-			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+			"Cost increases by [-15] per owned city <after adopting [Landed Elite]>"
 		],
 		"requiredTech": "Iron Working"
 	},
@@ -65,7 +65,7 @@
 			"[+100]% Natural religion spread [in this city]",
 			"Only available <when religion is enabled>",
 			"Can only be built <in [Holy] cities>",
-			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+			"Cost increases by [-15] per owned city <after adopting [Landed Elite]>"
 		],
 		"requiredTech": "Theology",
 		"isNationalWonder": true
@@ -79,7 +79,7 @@
 		"uniques": [
 			"Only available <if [Market] is constructed in all [non-[Puppeted]] cities>",
 		    "Cost increases by [30] per owned city",
-			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+			"Cost increases by [-15] per owned city <after adopting [Landed Elite]>"
 		],
 		"requiredTech": "Guilds"
 	},
@@ -93,7 +93,7 @@
 			"Only available <if [University] is constructed in all [non-[Puppeted]] cities>",
 			"Free Technology",
 			"Cost increases by [30] per owned city",
-			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+			"Cost increases by [-15] per owned city <after adopting [Landed Elite]>"
 		],
 		"requiredTech": "Education"
 	},
@@ -106,7 +106,7 @@
 		"uniques": [
 			"Only available <if [Workshop] is constructed in all [non-[Puppeted]] cities>",
 			"Cost increases by [30] per owned city",
-			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+			"Cost increases by [-15] per owned city <after adopting [Landed Elite]>"
 		],
 		"requiredTech": "Machinery"
 	},
@@ -119,7 +119,7 @@
 		"uniques": [
 			"Only available <if [Opera House] is constructed in all [non-[Puppeted]] cities>",
 			"Cost increases by [30] per owned city",
-			"Cost increases by [-20] per owned city <after adopting [Landed Elite]>"
+			"Cost increases by [-15] per owned city <after adopting [Landed Elite]>"
 		],
 		"requiredTech": "Architecture"
 	},
@@ -146,11 +146,11 @@
 		"gold": 3,
 		"culture": 1,
 		"cityStrength": 2,
-		"cost": 20,
+		"cost": 30,
 		"uniques": [
 			"'Palace.build'",
             "Can only be built <with [Temporary Palace.AuxiliaryCounter]>",
-			"Can be purchased for [120] [Gold] [in all cities]",
+			"Can be purchased for [150] [Gold] [in all cities]",
 			"Unbuildable <in cities with a [Relocation Temporary Palace]>",
 			//"Removes extra unhappiness from annexed cities",
 			"Remove [Relocation Temporary Palace] [in all cities]",
@@ -166,11 +166,11 @@
 		"gold": 3,
 		"culture": 1,
 		"cityStrength": 2,
-		"cost":20,
+		"cost":30,
 		"uniques":[
 			"'Palace.build'",
 			"Can only be built <with [Temporary Palace.AuxiliaryCounter]>",
-			"Can be purchased for [120] [Gold] [in all cities]",
+			"Can be purchased for [150] [Gold] [in all cities]",
 			"Unbuildable <in cities with a [Move Temporary Palace]>",
 			//"Removes extra unhappiness from annexed cities",
 		    "Remove [Move Temporary Palace] [in all cities]",
@@ -186,11 +186,11 @@
 		"gold": 3,
 		"culture": 1,
 		"cityStrength": 2,
-		"cost": 40,
+		"cost": 75,
 		"uniques": [
 			"'Palace.build'",
 			"Can only be built <after adopting [Legalism]> <without [Temporary Palace.AuxiliaryCounter]>",
-			"Can be purchased for [240] [Gold] [in all cities]",
+			"Can be purchased for [400] [Gold] [in all cities]",
 			//"Removes extra unhappiness from annexed cities",
 			"Instantly provides [1] [Temporary Palace.AuxiliaryCounter]",
 			"[+1 Gold, +1 Happiness] per [2] population [in this city] <after adopting [Monarchy]>"
